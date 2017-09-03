@@ -1,0 +1,532 @@
+
+
+	/*  General  */
+
+	
+/* Color scheme is based on subtle purple.  Let's use a base color of #8E70B0, with #3E205F as a text color.  Perhaps use #E6DEEE as a background and #090111 as damn near black but not quite?  Also shooting for mostly relative sizes based on percentages and standard em typography. */
+	
+body {
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
+	color: #3E205F;
+	background-color: #E6DEEE;
+	margin: 0;
+	padding: 5%;
+	}
+
+p, th, td, li, ul, ol, figcaption, h1, h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
+	}
+
+p.justified, p.left, p.center, p.right {
+	margin: 0 0 1.25em 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+	}
+
+p.justified {
+	text-align: justify;
+	}
+
+p.left	{
+	text-align: left;
+	}
+
+p.center {
+	text-align: center;
+	}
+
+p.right {
+	text-align: right;
+	}
+	
+h2	{
+	margin: 0 0 1.25em 0;
+	padding: 0;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	word-spacing: .2em;
+	color: #090111;
+	text-align: left;
+	font-weight: bold;
+	text-transform: lowercase;
+	font-style: normal;
+	}
+	
+h3	{
+	margin: 0 0 1.25em 0;
+	padding: 0;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	color: #8E70B0;
+	text-align: left;
+	font-weight: bold;
+	text-transform: lowercase;
+	font-style: italic;
+	}
+	
+a	{
+	font-weight: bold;
+	}
+
+a:link, a:visited {
+	color: #090111; 
+	text-decoration: none;
+	}
+
+a:hover, a:active {
+	color: #090111; 
+	text-decoration: underline; 
+	}	
+
+ul {
+	list-style: disc inside url("/images/bullet.gif");
+	margin: 0 5% 5% 5%;
+	text-align: left;
+	line-height: 1.5em;
+	padding: 0;
+	font-size: 1.0em;
+	/* color: TBD; */
+	}
+	
+ol {
+	list-style: lower-roman outside;
+	margin: 0 5% 5% 5%;
+	text-align: left;
+	line-height: 1.5em;
+	padding: 0;
+	font-size: 1.0em;
+	/* color: TBD; */
+	}
+
+img	{
+	display: inline;
+	font-size: 12px;
+	line-height: 16px;
+	color: #003;
+	margin: 0;
+	padding: 0;
+	}
+	
+p.breadcrumbs {
+	margin: 0 0 1.25em 0;
+	padding: 0;
+	font-size: .75em;
+	text-align: left;
+	line-height: 1.5em;
+	}
+
+#yodaquote {
+	display: inline-block;
+	width: 175px;
+	text-align: center;
+	float: right;
+	margin: 0 0 10px 20px;
+	padding: 3%;
+	border-top: 2px inset #090111;
+	border-bottom: 2px inset #090111;
+	}
+	
+#yodaquote p {
+	font-family: "Times New Roman", Times, serif; 
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	word-spacing: .1em;
+	color: #090111;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	}
+	
+.clear	{
+	clear: both;
+	}
+	
+.sideimage {
+	border: 1px solid #090111;
+	border-radius: 10px 10px;
+	}
+	
+.caption {
+	width: 300px;
+	margin: 0;
+	padding: 5px;
+	font-size: .75em;
+	text-align: center;
+	line-height: 1.5em;
+	font-style: italic;
+	}
+
+.noborder {
+	border: none; 
+	}
+
+.uline	{
+	text-decoration: underline;
+	}	
+
+strong	{
+	font-weight: bold;
+	}
+
+em	{
+	font-style: italic;
+	}
+
+.hidden {
+	display: none;
+	}
+	
+.floatright {
+	display: inline-block;
+	text-align: center;
+	float: right;
+	margin: 0 0 10px 20px;
+	padding: 0;
+	}	
+
+.floatleft {
+	display: inline-block;
+	text-align: center;
+	float: left;
+	margin: 0 20px 10px 0;
+	padding: 0;
+	}	
+	
+	
+	/*  Page Layout  */
+	
+	
+	div, table {
+	overflow: hidden;
+	}
+
+div#pagetable {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	/* min-width: TBD; */
+	max-width: 1024px;
+	min-width: 680px;
+	padding: 5%;
+	border: 1px solid #fff;
+	border-radius: 20px 20px;
+	background-color: #fff;
+	box-shadow: 10px 10px 10px #bcbcbc;
+	}
+	
+div#headerbox {
+	/* Going for 100% to test functionality...
+	margin-right: auto;
+	margin-left: auto;
+	*/
+	text-align: center; /* Center inline-block hack */
+	word-spacing: 20px; /* Sneaky method of separating inline-block boxes? */
+	/* max-width: 700px; */
+	width: 100%;
+	min-width: 400px; /* Subject to Change */
+	padding: 0;
+	margin: 0 0 30px 0;
+	}
+
+div#maincontent {
+	margin: 0;
+	padding: 5%;
+	border: 1px solid #E6DEEE;
+	border-radius: 15px 15px;
+	box-shadow: inset 0 0 30px #bcbcbc;
+	/* background-color: #ccf; */
+	}
+
+div#footerbox {
+	padding: 5%;
+	margin: 0;
+	}
+	
+	
+	/* Header Banner */
+	
+	
+div#pagebanner {
+	width: 400px;
+	height: 120px;
+	padding: 0 5px 0 0;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	/* background: transparent url("/images/headphones-light.gif") no-repeat 0% 0%; */
+	}
+	
+div#pagebanner img {
+	width: 100px;
+	height: 120px;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.6;
+	z-index: 5;
+	}
+	
+#pagebanner h1 {
+	position: relative;
+	width: 100%;
+	text-align: right;
+	text-shadow: 5px 5px 5px #c2c2c2;
+    font-family: 'GetVoIPGrotesqueRegular'; 
+	color: #3E205F;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-weight: normal; 
+    font-style: italic; 
+	font-size: 36px;
+	line-height: 50px; 
+	letter-spacing: 5px;
+	word-spacing: 0px; /* Turning this off from header div */
+	z-index: 10;
+}
+
+#pagebanner h1 .caps {
+	font-size: 50px;
+	}
+	
+#pagebanner h1 .port {
+	text-transform: none;
+	font-size: 30px;
+	font-style: normal; 
+	text-shadow: none;
+	}
+	
+#pagebanner h1 a {
+	display: inline-block;
+	width: 100%;
+	height: 120px;
+	color: #3E205F;
+	text-decoration: none;
+	}	
+
+
+	/* Menu Styles */
+	
+	
+nav {
+	width: 350px;
+	height: 120px;
+	display: inline-block;
+	vertical-align: top; /* Moving nav element to the top of the container */
+	}
+
+	/* The number of nested elements found in the nav area might be overkill and overly complex, resulting in the addition of unnecessary CSS rules. */
+	
+div#menubox {
+	width: 100%;
+	height: 120px;
+	display: inline-block; /* Not sure if block-level elements are allowed inside inline-block elements */
+	}
+	
+#menubox ul {
+	width: 100%;
+	height: 120px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	text-align: center; /* Centering the li elements */
+	word-spacing: 0px; /* Turning this off from header div */
+	}
+	
+#menubox ul li {
+	list-style: none;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.0em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: lowercase;
+	letter-spacing: 4px;
+	line-height: 120px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 10px;
+	}
+	
+#menubox a:link, #menubox a:visited {
+	text-shadow: gray 1px 1px 2px;
+	color: #090111; 
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+#menubox a:hover, #menubox a:active {
+	text-shadow: gray 2px 2px 5px;
+	color: #8E70B0; 
+	text-decoration: none;
+	font-weight: bold;
+	}
+	
+
+	/*  Splash Page  */
+	
+	
+p.splashpage {
+	margin-bottom: 1.5em;
+	padding: 0 5%;
+	font-size: 1.25em;
+	text-align: center;
+	line-height: 1.5em;
+	letter-spacing: .1em;
+	word-spacing: .25em;
+	}
+	
+div#splashimages {
+    width: 100%;
+	border: 0;
+	padding: 0;
+	text-align: center; /* Center inline-block hack */
+	}
+	
+#splashimages figure {
+	display: inline-block;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center; /* Centering inline items within the figure element */
+	}
+	
+#splashimages img {
+	width: 180px;
+	height: 180px;
+	border: 1px solid #090111;
+	border-radius: 8px 8px;
+	background-color: transparent;
+	}
+
+#splashimages a {
+	display: inline-block;
+	text-decoration: none;
+	}
+	
+#splashimages a:hover, #splashimages a:active {
+	box-shadow: 0 0 10px #bcbcbc;
+	opacity: 0.6;
+	}
+	
+#splashimages a:link, #splashimages a:visited {
+	box-shadow: none;
+	}
+	
+
+	/*  Footer Content  */
+	
+
+#footerbox p {
+	padding: 0;
+	margin: 0;
+	font-size: .75em;
+	text-align: center;
+	line-height: 1.5em;
+	color: #8E70B0;
+	}
+
+
+    /* Form Rules */
+
+	
+fieldset#contactbox {
+	margin: 0 0 1.25em 0;
+	padding: 5%;
+	border: 2px solid #E6DEEE;
+	border-radius: 10px 10px;
+	box-shadow: 10px 10px 10px #bcbcbc;
+	}
+	
+#contactbox legend {
+	margin: 0;
+	padding: 5px;
+	border: 2px solid #E6DEEE;
+	border-radius: 5px 5px;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	color: #8E70B0;
+	text-align: left;
+	font-weight: bold;
+	text-transform: lowercase;
+	font-style: italic;
+	}
+	
+input, textarea, select {
+	display: inline;
+	font-family: "Courier New", Courier, monospace;
+	background-color: #E6DEEE;
+	border-radius: 5px 5px;
+	border: 2px inset #090111;
+	font-size: .75em;
+	color: #090111;
+	}
+	
+input:focus, textarea:focus, select:focus {
+	background-color: #F4F0F7;
+	}
+
+.forminput {
+	clear: both;
+	margin-bottom: 20px;
+	}
+
+.formitem {
+	float: left;
+	width: 210px;
+	margin-right: 20px;
+	}
+
+.formitem p {
+	padding: 0 0 0 5px;
+	font-size: 1.0em;
+	line-height: 1.5em;
+	color: #3E205F;
+	text-align: right;
+	font-weight: normal;
+	margin: 0;
+	}	
+
+#name, #email, #phone {
+	width: 280px;
+	}
+	
+#contactmethod {
+	/* TBD */
+	}
+
+#comments {
+	max-width: 500px;
+	min-width: 280px;
+	}
+
+#submitbuttons {
+	margin: 0;	
+	padding: 0;
+	text-align: center;
+	}
+
+input#submit, input#reset {
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
+	color: #F4F0F7;
+	font-size: 1.0em;
+	font-weight: bold;
+	background-color: #3E205F;
+	}
+	
+input#submit:hover, input#reset:hover {
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
+	color: #3E205F;
+	font-size: 1.0em;
+	font-weight: bold;
+	background-color: #F4F0F7;
+	}
+
+#submit {
+	margin-right: 40px;
+	}
+
+
+

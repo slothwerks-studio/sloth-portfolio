@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Sloth Portfolio :: About</title>
+
+		<meta charset="utf-8"  />
+		<meta name="description" content="Learn more about the wild world of SlothWerks." />
+
+	<!--#include virtual="/includes/header.html" -->
+			
+			<div id="maincontent">
+			
+				<p class="breadcrumbs">
+				<a href="/">Home</a> &gt; About
+				</p>
+			
+				<h2>Just what is SlothWerks?</h2>
+				
+				<figure class="floatright">
+					<img class="sideimage" src="/images/sloth-at-mulick-park.jpg" alt="Sloth at Mulick Park Elementary" />
+					<br />
+					<figcaption class="caption">Sloth explains the subtle intricacies of Mario Chase at a Mulick Park Elementary Family Fun Night event.</figcaption>
+				</figure>
+				
+				<p class="justified">
+				SlothWerks is the largely not-for-profit face of Sloth, a multi-media producer and audio/video engineer based in Grand Rapids, Michigan.  While the <a href="http://www.slothwerks.com/" target="_blank">SlothWerks commercial website</a> is designed to entice new business to the Underground Production Studio, the focus of this portfolio is on web design.  We heartily thank <a href="https://www.grandcircus.co/" target="_blank">Grand Circus</a> for this opportunity to once again delve into "pure code" and, hopefully, a new chapter in the professional development of the SlothWerks brand.
+				</p>
+				
+				<p class="justified">
+				In the past, Sloth has developed web projects for a wide variety of clients, including WYCE Radio, the Smith College Smithereens, the Grand Rapids Peninsular Club, City High / Middle School PTSA, and Mulick Park Elementary.  For a taste of what we're up to these days, visit our <a href="/projects/">projects page</a>.
+				</p>
+								
+			</div> <!-- End of main page content -->
+		
+	<!--#include virtual="/includes/footer.html" -->
+
+		</div> <!-- End of page table -->
+
+	</body>
+  
+</html>

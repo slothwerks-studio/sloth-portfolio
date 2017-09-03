@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Sloth Portfolio :: Thank You!</title>
+
+		<meta charset="utf-8"  />
+		<meta name="description" content="Contact the production team at SlothWerks." />
+
+	<!--#include virtual="/includes/header.html" -->
+			
+			<div id="maincontent">
+			
+			<!-- Do we need breadcrumbs for this?
+			
+				<p class="breadcrumbs">
+				<a href="/">Home</a> &gt; Contact
+				</p>
+				
+			-->
+			
+				<h2>Your message is on its way!</h2>
+				
+				<p class="justified">
+				Thank you for your comments and feedback; we look forward to working with you!  Please allow 72 hours for a response.
+				</p>
+								
+			</div> <!-- End of main page content -->
+		
+	<!--#include virtual="/includes/footer.html" -->
+
+		</div> <!-- End of page table -->
+
+	</body>
+  
+</html>

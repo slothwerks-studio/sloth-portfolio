@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Sloth Portfolio :: Contact</title>
+
+		<meta charset="utf-8"  />
+		<meta name="description" content="Contact the production team at SlothWerks." />
+
+	<!--#include virtual="/includes/header.html" -->
+			
+			<div id="maincontent">
+			
+				<p class="breadcrumbs">
+				<a href="/">Home</a> &gt; Contact
+				</p>
+			
+				<h2>Give us a shout!</h2>
+				
+				<p class="justified">
+				Have a project that needs that special touch?  <a href="mailto:production@slothwerks.com">Drop our production team an email</a> or give us a jingle the old-fashioned way at 616.258.6179.  We'd love to hear from you!
+				</p>
+				
+				<form action="contact.php" method="post" name="form" id="contactform">
+
+					<fieldset id="contactbox">
+				
+						<legend>Contact SlothWerks</legend>
+				
+						<div class="forminput">
+
+							<div class="formitem">
+								<p><label for="name">Name:</label></p>
+							</div>
+
+							<input id="name" type="text" name="Name" value="" size="40" maxlength="45" />
+
+						</div>
+
+						<div class="forminput">
+
+							<div class="formitem">
+								<p><label for="email">Email:</label></p>
+							</div>
+
+							<input id="email" type="text" name="EmailAddress" value="" size="40" maxlength="60" /> 
+
+						</div>
+
+						<div class="forminput">
+
+							<div class="formitem">
+								<p><label for="phone">Phone:</label></p>
+							</div>
+
+							<input id="phone" type="text" name="Phone" value="" size="15" maxlength="12" />
+
+						</div>
+						
+						<div class="forminput">
+
+							<div class="formitem">
+								<p>Preferred Method of Contact:</p>
+							</div>
+
+							<label><input type="radio" name="ContactMethod" value="Email" checked="checked" /> Email</label>
+							<label><input type="radio" name="ContactMethod" value="Phone" /> Phone</label>
+							
+						</div>
+
+						<div class="forminput">
+
+							<div class="formitem">
+								<p>Comments / Message Text:</p>
+							</div>
+
+							<textarea id="comments" name="Comments" cols="40" rows="10"></textarea>
+
+						</div>
+
+						<div class="forminput">
+
+							<div id="submitbuttons">
+								<input type="submit" id="submit" name="submit" value="Submit" />
+								<input type="reset" id="reset" name="ResetForm" value="Reset" />
+							</div>
+
+						</div>
+
+					</fieldset>
+					
+				</form>
+								
+			</div> <!-- End of main page content -->
+		
+	<!--#include virtual="/includes/footer.html" -->
+
+		</div> <!-- End of page table -->
+
+	</body>
+  
+</html>

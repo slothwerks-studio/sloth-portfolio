@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Sloth Portfolio :: Projects</title>
+
+		<meta charset="utf-8"  />
+		<meta name="description" content="Delve into the current project work at SlothWerks." />
+
+	<!--#include virtual="/includes/header.html" -->
+			
+			<div id="maincontent">
+			
+				<p class="breadcrumbs">
+				<a href="/">Home</a> &gt; Projects
+				</p>
+			
+				<h2>Stuff we're up to these days...</h2>
+				
+				<blockquote id="yodaquote" cite="http://www.starwars.com/news/the-starwars-com-10-best-yoda-quotes">
+					<p>Do.  Or do not.  There is no try.<br />- Yoda</p>
+				</blockquote>
+				
+				<p class="justified">
+				SlothWerks continues its tradition as a partner to the community, tackling a variety of multi-media, web development, and special event coordination projects for area not-for-profits.  As with most things, SlothWerks approaches each project with an eye for detail and the delicate care that every client deserves.
+				</p>
+				
+				<h3>Current Projects</h3>
+				
+				<ol>
+					<li>Challenge Walk MS event videos for the <a href="http://www.nationalmssociety.org/Chapters/WIG" target="_blank">National Multiple Sclerosis Society, Wisconsin Chapter</a></li>
+					<li>Web management for <a href="http://www.teamn3kk1d.com/" target="_blank">Team N3kk1d</a> and <a href="http://www.mulickpark.org/" target="_blank">Mulick Park Elementary</a> (on-going)</li>
+					<li>A web-based local business recommendation database for the <a href="https://www.eastgategr.com/" target="_blank">Eastgate Neighborhood Association</a> (on-going)</li>
+				</ol>
+				
+				<p class="justified">
+				We hope to add additional projects to this list as we delve back into the world of web development via <a href="https://www.grandcircus.co/" target="_blank">Grand Circus</a>, a community-centric technical training group operating out of Detroit and Grand Rapids, Michigan. 
+				</p>
+								
+			</div> <!-- End of main page content -->
+		
+	<!--#include virtual="/includes/footer.html" -->
+
+		</div> <!-- End of page table -->
+
+	</body>
+  
+</html>
