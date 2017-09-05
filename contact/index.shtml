@@ -7,13 +7,15 @@
 
 		<meta charset="utf-8"  />
 		<meta name="description" content="Contact the production team at SlothWerks." />
+		
+		<script src="/includes/contactformtest.js"></script>
 
-	<!--#include virtual="/includes/header.html" -->
+		<!--#include virtual="/includes/header.html" -->
 			
 			<div id="maincontent">
 			
-				<p class="breadcrumbs">
-				<a href="/">Home</a> &gt; Contact
+				<p id="breadcrumbs">
+				Contact &lt; <a href="/">Home</a>
 				</p>
 			
 				<h2>Give us a shout!</h2>
@@ -28,65 +30,75 @@
 				
 						<legend>Contact SlothWerks</legend>
 				
-						<div class="forminput">
+						<div id="inputform">
+				
+							<div class="forminputleft">
 
-							<div class="formitem">
-								<p><label for="name">Name:</label></p>
+								<div class="formitem">
+									<p><label for="name">Name:</label></p>
+									<input id="name" type="text" name="Name" value="" size="40" maxlength="45" />
+								</div>
+									
 							</div>
 
-							<input id="name" type="text" name="Name" value="" size="40" maxlength="45" />
+							<div class="forminputright">
 
-						</div>
-
-						<div class="forminput">
-
-							<div class="formitem">
-								<p><label for="email">Email:</label></p>
+								<div class="formitem">
+									<p><label for="email">Email:</label></p>
+									<input id="email" type="text" name="EmailAddress" value="" size="40" maxlength="60" /> 
+								</div>
+								
 							</div>
 
-							<input id="email" type="text" name="EmailAddress" value="" size="40" maxlength="60" /> 
+							<div class="forminputleft">
 
-						</div>
+								<div class="formitem">
+									<p><label for="phone">Phone:</label></p>
+									<input id="phone" type="text" name="Phone" value="" size="15" maxlength="12" />
+								</div>
 
-						<div class="forminput">
-
-							<div class="formitem">
-								<p><label for="phone">Phone:</label></p>
 							</div>
-
-							<input id="phone" type="text" name="Phone" value="" size="15" maxlength="12" />
-
-						</div>
-						
-						<div class="forminput">
-
-							<div class="formitem">
-								<p>Preferred Method of Contact:</p>
-							</div>
-
-							<label><input type="radio" name="ContactMethod" value="Email" checked="checked" /> Email</label>
-							<label><input type="radio" name="ContactMethod" value="Phone" /> Phone</label>
 							
-						</div>
+							<div class="forminputright">
 
-						<div class="forminput">
-
-							<div class="formitem">
-								<p>Comments / Message Text:</p>
+								<div class="formitem">
+									<p>Preferred Method of Contact:</p>
+									<label><input type="radio" name="ContactMethod" value="Email" checked="checked" /> Email</label>
+									<label><input type="radio" name="ContactMethod" value="Phone" /> Phone</label>
+								</div>
+							
 							</div>
 
-							<textarea id="comments" name="Comments" cols="40" rows="10"></textarea>
+							<div class="forminputleft">
 
-						</div>
+								<div class="formitem">
+									<p>Comments / Message Text:</p>
+									<textarea id="comments" name="Comments" cols="40" rows="10"></textarea>
+								</div>
 
-						<div class="forminput">
+							</div>
+							
+							<div class="forminputright">
+
+								<div class="formitem">
+									<p><label for="robottest">Robot Test:</label></p>
+									<p id="robottestcaption">Please type in the characters found in this image (no spaces; case sensitive) and click the test button:<br /><img src="/images/robottestimage.gif" alt="Robot Test Image" /></p>
+									
+									<input id="robottest" type="text" name="RobotTest" value="" size="20" maxlength="5" /> 
+								
+									<p id="robottestbutton" onclick="robotTest()">Test</p>
+								
+									<p id="testresults"><span class="hidden">Results...</span></p>
+								</div>
+
+							</div>
 
 							<div id="submitbuttons">
 								<input type="submit" id="submit" name="submit" value="Submit" />
 								<input type="reset" id="reset" name="ResetForm" value="Reset" />
 							</div>
-
-						</div>
+						
+						</div> <!-- End of input form -->
 
 					</fieldset>
 					
@@ -94,7 +106,7 @@
 								
 			</div> <!-- End of main page content -->
 		
-	<!--#include virtual="/includes/footer.html" -->
+		<!--#include virtual="/includes/footer.html" -->
 
 		</div> <!-- End of page table -->
 

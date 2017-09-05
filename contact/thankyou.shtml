@@ -3,22 +3,18 @@
 
 	<head>
 
-		<title>Sloth Portfolio :: Thank You!</title>
+		<title>Sloth Portfolio :: Contact :: Thank You!</title>
 
 		<meta charset="utf-8"  />
 		<meta name="description" content="Contact the production team at SlothWerks." />
 
-	<!--#include virtual="/includes/header.html" -->
+		<!--#include virtual="/includes/header.html" -->
 			
 			<div id="maincontent">
 			
-			<!-- Do we need breadcrumbs for this?
-			
-				<p class="breadcrumbs">
-				<a href="/">Home</a> &gt; Contact
+				<p id="breadcrumbs">
+				Thank You! &lt; <a href="/contact/">Contact</a> &lt; <a href="/">Home</a>
 				</p>
-				
-			-->
 			
 				<h2>Your message is on its way!</h2>
 				
@@ -28,7 +24,7 @@
 								
 			</div> <!-- End of main page content -->
 		
-	<!--#include virtual="/includes/footer.html" -->
+		<!--#include virtual="/includes/footer.html" -->
 
 		</div> <!-- End of page table -->
 

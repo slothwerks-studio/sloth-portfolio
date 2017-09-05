@@ -3,63 +3,21 @@
 
 	<head>
 
-		<title>Sloth Portfolio</title>
+		<title>Sloth Portfolio :: Home</title>
 
 		<meta charset="utf-8"  />
 		<meta name="description" content="The web portfolio for Sloth I, aka SlothWerks." />
-
-	<!--#include virtual="/includes/header.html" -->
-
-	<!-- This section is now fetched via server-side include...
 	
-		<link rel="stylesheet" type="text/css" href="/styles/default.css" /> 
-		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/free-grotesque-web-font" type="text/css"/>	
-		<link rel="Shortcut Icon" type="image/x-icon" href="/images/favicon.ico" /> 
-
-	</head>
-
-	<body>
-
-		<div id="pagetable">
-
-			<header>
-			
-				<div id="headerbox">
-			
-					<div id="pagebanner">
-					
-						<img src="/images/headphones.gif" alt="Headphones" />
-
-						<h1><a href="/"><span class="caps">S</span>loth<span class="caps">W</span>erks<br /><span class="port">Portfolio</span></a></h1>
-					
-					</div>
-				
-					<nav>
-					
-						<div id="menubox">
-					
-							<ul>
-								<li><a href="/about/">about</a></li>
-								<li><a href="/projects/">projects</a></li>
-								<li><a href="/contact/">contact</a></li>
-							</ul>
-					
-						</div>
-					
-					</nav>
-				
-				</div>
-			
-			</header>
-			
-	-->
+		<!--#include virtual="/includes/header.html" -->
 			
 			<div id="maincontent">
 			
-				<h2>A friend to the community</h2>
+				<p id="breadcrumbs">
+				&lt; Home
+				</p>
 				
 				<p class="splashpage">
-				For more than fifteen years, SlothWerks has offered multi-media and web-based technical services to non-profits and commercial clients alike.
+				For more than fifteen years, SlothWerks has offered multi-media and web-based technical services to community not-for-profits and commercial clients alike.
 				</p>
 				
 				<div id="splashimages">
@@ -89,21 +47,7 @@
 				
 			</div> <!-- End of main page content -->
 		
-	<!--#include virtual="/includes/footer.html" -->
-	
-	<!-- This section is now fetched via server-side include...
-		
-			<footer>
-
-				<div id="footerbox">
-				
-					<p>Site Hosting by <a href="http://www.tigertech.net/cgi-bin/referhosting.cgi?aa-slothwerks.com" target="_blank">Tiger Technologies</a>.  Coded with web standard <a href="http://validator.w3.org/check/referer" target="_blank">HTML5</a> and <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://portfolio.slothwerks.com/styles/default.css" target="_blank">CSS3</a>.  Content (c) 2017 <a href="http://www.slothwerks.com/" target="_blank">SlothWerks</a>.</p>
-					
-				</div>
-				
-			</footer>
-			
-	-->
+		<!--#include virtual="/includes/footer.html" -->
 
 		</div> <!-- End of page table -->
 

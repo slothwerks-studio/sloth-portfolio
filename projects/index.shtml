@@ -8,19 +8,21 @@
 		<meta charset="utf-8"  />
 		<meta name="description" content="Delve into the current project work at SlothWerks." />
 
-	<!--#include virtual="/includes/header.html" -->
+		<!--#include virtual="/includes/header.html" -->
 			
 			<div id="maincontent">
 			
-				<p class="breadcrumbs">
-				<a href="/">Home</a> &gt; Projects
+				<p id="breadcrumbs">
+				Projects &lt; <a href="/">Home</a>
 				</p>
 			
 				<h2>Stuff we're up to these days...</h2>
 				
-				<blockquote id="yodaquote" cite="http://www.starwars.com/news/the-starwars-com-10-best-yoda-quotes">
-					<p>Do.  Or do not.  There is no try.<br />- Yoda</p>
-				</blockquote>
+				<figure class="floatright">
+					<img class="sideimage" src="/images/challenge-walk-ms-rest-stop.jpg" alt="Challenge Walk MS Rest Stop" />
+					<br />
+					<figcaption class="caption">Sloth has provided event support for the Wisconsin Challenge Walk MS event since its inaugural year in 2008.</figcaption>
+				</figure>
 				
 				<p class="justified">
 				SlothWerks continues its tradition as a partner to the community, tackling a variety of multi-media, web development, and special event coordination projects for area not-for-profits.  As with most things, SlothWerks approaches each project with an eye for detail and the delicate care that every client deserves.
@@ -40,7 +42,7 @@
 								
 			</div> <!-- End of main page content -->
 		
-	<!--#include virtual="/includes/footer.html" -->
+		<!--#include virtual="/includes/footer.html" -->
 
 		</div> <!-- End of page table -->
 
